@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="96" viewBox="0 0 1200 96" role="img" aria-labelledby="wave-title wave-desc">
+  <title id="wave-title">Meeting audio waveform</title>
+  <desc id="wave-desc">A restrained blue audio waveform with frequency bars.</desc>
+  <g fill="#cbd5e1" opacity="0.72">
+    <rect x="12" y="42" width="4" height="12" rx="2"/>
+    <rect x="28" y="34" width="4" height="28" rx="2"/>
+    <rect x="44" y="24" width="4" height="48" rx="2"/>
+    <rect x="60" y="36" width="4" height="24" rx="2"/>
+    <rect x="76" y="16" width="4" height="64" rx="2"/>
+    <rect x="92" y="30" width="4" height="36" rx="2"/>
+    <rect x="108" y="40" width="4" height="16" rx="2"/>
+    <rect x="1092" y="40" width="4" height="16" rx="2"/>
+    <rect x="1108" y="30" width="4" height="36" rx="2"/>
+    <rect x="1124" y="16" width="4" height="64" rx="2"/>
+    <rect x="1140" y="36" width="4" height="24" rx="2"/>
+    <rect x="1156" y="24" width="4" height="48" rx="2"/>
+    <rect x="1172" y="34" width="4" height="28" rx="2"/>
+    <rect x="1188" y="42" width="4" height="12" rx="2"/>
+  </g>
+  <path d="M0 48 C24 48 24 48 40 48 C56 48 56 20 72 20 C88 20 88 76 104 76 C120 76 120 42 136 42 C152 42 152 54 168 54 C184 54 184 32 200 32 C216 32 216 64 232 64 C248 64 248 48 264 48 C280 48 280 48 296 48 C312 48 312 28 328 28 C344 28 344 68 360 68 C376 68 376 40 392 40 C408 40 408 56 424 56 C440 56 440 48 456 48 C472 48 472 18 488 18 C504 18 504 78 520 78 C536 78 536 40 552 40 C568 40 568 56 584 56 C600 56 600 48 616 48 C632 48 632 28 648 28 C664 28 664 68 680 68 C696 68 696 40 712 40 C728 40 728 56 744 56 C760 56 760 48 776 48 C792 48 792 20 808 20 C824 20 824 76 840 76 C856 76 856 42 872 42 C888 42 888 54 904 54 C920 54 920 32 936 32 C952 32 952 64 968 64 C984 64 984 48 1000 48 C1016 48 1016 48 1032 48 C1048 48 1048 28 1064 28 C1080 28 1080 68 1096 68 C1112 68 1112 40 1128 40 C1144 40 1144 56 1160 56 C1176 56 1176 48 1200 48" fill="none" stroke="#2563eb" stroke-width="3" stroke-linecap="round"/>
+  <path d="M0 48 H1200" fill="none" stroke="#dbeafe" stroke-width="1"/>
+</svg>

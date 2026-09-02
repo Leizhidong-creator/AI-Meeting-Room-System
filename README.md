@@ -1,3 +1,11 @@
+<p align="center">
+  <img src="assets/favicon.svg" alt="AI 会议室系统 logo" width="48" />
+</p>
+
+<p align="center">
+  <img src="assets/acoustic-waveform.svg" alt="声学波形视觉元素" width="280" />
+</p>
+
 <h1 align="center">⚡ AI 会议室系统 🎙️</h1>
 
 <p align="center"><strong>AI Meeting Room System</strong></p>
@@ -5,6 +13,10 @@
 <p align="center"><em>面向企业内网会议的端到端 AI 会议治理系统</em></p>
 
 <p align="center"><sub>真实会议室 · 企业内网 · 完整治理闭环 · 纯软件报价 15w+</sub></p>
+
+<p align="center">
+  <img src="assets/product-architecture.png" alt="AI Meeting Room System 产品架构：从会议室实时采集到企业治理成果" width="100%" />
+</p>
 
 ## 🎯 项目概览
 
@@ -87,6 +99,10 @@
 - **企业交付与落地：** 针对敏感会议无法依赖公共平台处理的问题，主导 Electron 采集端、Windows 工作台和企业 Linux AI 后端的整体联调与部署，确保会议数据在企业内网闭环处理，保障会议的安全性。
 
 ## 📊 定性成果
+
+<p align="center">
+  <img src="assets/qualitative-results.png" alt="会议思维导图与两类企业文稿的定性成果" width="100%" />
+</p>
 
 ## 🏆 项目成果与企业价值
 

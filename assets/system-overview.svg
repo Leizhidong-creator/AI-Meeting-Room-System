@@ -1,0 +1,136 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="612" viewBox="0 0 1400 612" role="img" aria-labelledby="title desc">
+  <title id="title">AI 会议室系统总览</title>
+  <desc id="desc">从真实会议室输入，经声学与语音智能、会议理解，到企业成果治理的会中实时与会后正式双轨链路。</desc>
+  <defs>
+    <marker id="arrow-blue" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L8,4 L0,8 Z" fill="#2F6F9F"/>
+    </marker>
+    <marker id="arrow-plum" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L8,4 L0,8 Z" fill="#795B86"/>
+    </marker>
+    <style>
+      .sans { font-family: Inter, "Noto Sans SC", "Microsoft YaHei", Arial, sans-serif; }
+      .kicker { font-size: 12px; font-weight: 700; letter-spacing: 2px; fill: #687386; }
+      .title { font-size: 28px; font-weight: 700; fill: #172033; }
+      .subtitle { font-size: 13px; fill: #687386; }
+      .stage-no { font-size: 11px; font-weight: 700; letter-spacing: 1px; }
+      .stage-title { font-size: 17px; font-weight: 700; fill: #1B2538; }
+      .track-label { font-size: 12px; font-weight: 700; letter-spacing: .6px; }
+      .node-title { font-size: 16px; font-weight: 700; fill: #1B2538; }
+      .node-sub { font-size: 12px; fill: #667085; }
+      .chip { font-size: 11px; font-weight: 600; }
+      .caption { font-size: 11px; fill: #667085; }
+    </style>
+  </defs>
+
+  <rect width="1400" height="612" fill="#F8FAFC"/>
+  <rect x="1" y="1" width="1398" height="610" rx="8" fill="none" stroke="#DCE2EA"/>
+
+  <g class="sans">
+    <g transform="translate(48 38)">
+      <path d="M0 17h6l4-9 8 23 8-28 8 28 8-19 7 14h13" fill="none" stroke="#009E73" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="82" y="13" class="kicker">SYSTEM OVERVIEW</text>
+      <text x="82" y="43" class="title">真实会议室中的双轨 AI 会议链路</text>
+      <text x="82" y="68" class="subtitle">From in-room acoustic signals to reviewed, governed and reusable enterprise deliverables</text>
+    </g>
+
+    <line x1="48" y1="126" x2="1352" y2="126" stroke="#DCE2EA"/>
+
+    <g>
+      <text x="74" y="154" class="stage-no" fill="#0072B2">01 · INPUT</text>
+      <text x="74" y="177" class="stage-title">真实会议室输入</text>
+      <line x1="314" y1="143" x2="314" y2="528" stroke="#E3E7ED"/>
+
+      <text x="350" y="154" class="stage-no" fill="#009E73">02 · SPEECH INTELLIGENCE</text>
+      <text x="350" y="177" class="stage-title">声学与语音智能</text>
+      <line x1="688" y1="143" x2="688" y2="528" stroke="#E3E7ED"/>
+
+      <text x="724" y="154" class="stage-no" fill="#E69F00">03 · MEETING UNDERSTANDING</text>
+      <text x="724" y="177" class="stage-title">会议理解</text>
+      <line x1="1038" y1="143" x2="1038" y2="528" stroke="#E3E7ED"/>
+
+      <text x="1074" y="154" class="stage-no" fill="#795B86">04 · GOVERNANCE</text>
+      <text x="1074" y="177" class="stage-title">企业成果治理</text>
+    </g>
+
+    <g>
+      <rect x="48" y="202" width="1304" height="132" rx="8" fill="#F3F8FC" stroke="#C9DBEA"/>
+      <rect x="48" y="202" width="9" height="132" rx="4" fill="#0072B2"/>
+      <text x="74" y="229" class="track-label" fill="#2F6F9F">LIVE · 会中实时链路</text>
+
+      <rect x="48" y="354" width="1304" height="174" rx="8" fill="#F8F5F9" stroke="#DDD3E2"/>
+      <rect x="48" y="354" width="9" height="174" rx="4" fill="#795B86"/>
+      <text x="74" y="381" class="track-label" fill="#795B86">FORMAL · 会后正式链路</text>
+    </g>
+
+    <g>
+      <rect x="80" y="247" width="198" height="62" rx="8" fill="#FFFFFF" stroke="#98BBD5"/>
+      <circle cx="105" cy="268" r="7" fill="none" stroke="#0072B2" stroke-width="1.8"/>
+      <path d="M105 279v10M96 289h18M91 273c0 8 6 13 14 13s14-5 14-13" fill="none" stroke="#0072B2" stroke-width="1.8" stroke-linecap="round"/>
+      <text x="133" y="268" class="node-title">远场采集</text>
+      <text x="133" y="289" class="node-sub">会议元数据 · 现场笔记</text>
+
+      <rect x="80" y="401" width="198" height="88" rx="8" fill="#FFFFFF" stroke="#B9A8C3"/>
+      <path d="M93 447h7l5-17 8 34 8-42 8 35 8-24 7 14h12" fill="none" stroke="#795B86" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="167" y="438" class="node-title">原始音频</text>
+      <text x="167" y="460" class="node-sub">保留审计与复核依据</text>
+    </g>
+
+    <g>
+      <line x1="278" y1="278" x2="349" y2="278" stroke="#2F6F9F" stroke-width="1.6" marker-end="url(#arrow-blue)"/>
+      <rect x="366" y="234" width="286" height="88" rx="8" fill="#FFFFFF" stroke="#70B6A0"/>
+      <text x="389" y="263" class="node-title">实时语音链</text>
+      <text x="389" y="286" class="node-sub">低延迟字幕与会议内说话人跟踪</text>
+      <rect x="389" y="297" width="43" height="18" rx="4" fill="#E7F5F0"/>
+      <text x="410.5" y="310" text-anchor="middle" class="chip" fill="#007C5E">VAD</text>
+      <rect x="439" y="297" width="129" height="18" rx="4" fill="#E7F5F0"/>
+      <text x="503.5" y="310" text-anchor="middle" class="chip" fill="#007C5E">Paraformer Streaming</text>
+      <rect x="575" y="297" width="54" height="18" rx="4" fill="#E7F5F0"/>
+      <text x="602" y="310" text-anchor="middle" class="chip" fill="#007C5E">CAM++</text>
+
+      <line x1="278" y1="445" x2="349" y2="445" stroke="#795B86" stroke-width="1.6" marker-end="url(#arrow-plum)"/>
+      <rect x="366" y="392" width="286" height="106" rx="8" fill="#FFFFFF" stroke="#B9A8C3"/>
+      <text x="389" y="421" class="node-title">会后精修</text>
+      <text x="389" y="444" class="node-sub">增强、稳定转写与说话人校正</text>
+      <rect x="389" y="458" width="100" height="18" rx="4" fill="#F0EBF3"/>
+      <text x="439" y="471" text-anchor="middle" class="chip" fill="#6B4F78">DeepFilterNet3</text>
+      <rect x="496" y="458" width="123" height="18" rx="4" fill="#F0EBF3"/>
+      <text x="557.5" y="471" text-anchor="middle" class="chip" fill="#6B4F78">Qwen3-ASR 1.7B</text>
+      <text x="389" y="489" class="node-sub">Pyannote Community-1 · ERes2NetV2</text>
+    </g>
+
+    <g>
+      <line x1="652" y1="278" x2="723" y2="278" stroke="#2F6F9F" stroke-width="1.6" marker-end="url(#arrow-blue)"/>
+      <rect x="740" y="234" width="262" height="88" rx="8" fill="#FFFFFF" stroke="#E2BE6D"/>
+      <text x="763" y="263" class="node-title">可修订现场记录</text>
+      <text x="763" y="286" class="node-sub">实时字幕 · 说话人 · 时间戳</text>
+      <path d="M942 259h30M942 271h30M942 283h18" stroke="#E69F00" stroke-width="2" stroke-linecap="round"/>
+
+      <line x1="652" y1="445" x2="723" y2="445" stroke="#795B86" stroke-width="1.6" marker-end="url(#arrow-plum)"/>
+      <rect x="740" y="392" width="262" height="106" rx="8" fill="#FFFFFF" stroke="#E2BE6D"/>
+      <text x="763" y="421" class="node-title">结构化事实层</text>
+      <text x="763" y="444" class="node-sub">稳定文本冻结后统一生成成果</text>
+      <rect x="763" y="458" width="211" height="22" rx="4" fill="#FFF5DE"/>
+      <text x="868.5" y="473" text-anchor="middle" class="chip" fill="#9A6500">摘要 · 行动项 · 思维导图</text>
+    </g>
+
+    <g>
+      <line x1="1002" y1="278" x2="1073" y2="278" stroke="#2F6F9F" stroke-width="1.6" marker-end="url(#arrow-blue)"/>
+      <rect x="1090" y="234" width="230" height="88" rx="8" fill="#FFFFFF" stroke="#A994B5"/>
+      <text x="1113" y="263" class="node-title">低延迟辅助</text>
+      <text x="1113" y="286" class="node-sub">可修订 · 不直接成为正式记录</text>
+
+      <line x1="1002" y1="445" x2="1073" y2="445" stroke="#795B86" stroke-width="1.6" marker-end="url(#arrow-plum)"/>
+      <rect x="1090" y="392" width="230" height="106" rx="8" fill="#FFFFFF" stroke="#A994B5"/>
+      <text x="1113" y="421" class="node-title">治理与发布</text>
+      <text x="1113" y="444" class="node-sub">人工复核 → 审批 → 归档</text>
+      <rect x="1113" y="458" width="78" height="22" rx="4" fill="#F0EBF3"/>
+      <text x="1152" y="473" text-anchor="middle" class="chip" fill="#6B4F78">对内成果</text>
+      <rect x="1198" y="458" width="78" height="22" rx="4" fill="#F0EBF3"/>
+      <text x="1237" y="473" text-anchor="middle" class="chip" fill="#6B4F78">对外成果</text>
+    </g>
+
+    <line x1="48" y1="555" x2="1352" y2="555" stroke="#DCE2EA"/>
+    <text x="48" y="582" class="caption"><tspan font-weight="700" fill="#344054">Figure 1.</tspan> 会中链路提供低延迟辅助；会后链路先完成增强、稳定转写与说话人校正，再进入可审核、可归档的企业成果流程。</text>
+  </g>
+</svg>
