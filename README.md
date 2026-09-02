@@ -1,25 +1,10 @@
-<p align="center">
-  <img src="docs/assets/acoustic-waveform.svg" alt="声学波形视觉元素" width="280" />
-</p>
-
 <h1 align="center">⚡ AI 会议室系统 🎙️</h1>
 
 <p align="center"><strong>AI Meeting Room System</strong></p>
 
 <p align="center"><em>面向企业内网会议的端到端 AI 会议治理系统</em></p>
 
-<p align="center">
-  <a href="frontend/package.json"><img src="https://img.shields.io/badge/Frontend-Next.js%2016-black?logo=next.js" alt="Next.js 16" /></a>
-  <a href="backend/go.mod"><img src="https://img.shields.io/badge/Backend-Go%201.25.6-00ADD8?logo=go&amp;logoColor=white" alt="Go 1.25.6" /></a>
-  <a href="ai-service/service/ai_service/app.py"><img src="https://img.shields.io/badge/AI%20Service-FastAPI-009688?logo=fastapi&amp;logoColor=white" alt="FastAPI" /></a>
-  <a href="ai-service/requirements-speech.txt"><img src="https://img.shields.io/badge/Speech-ASR%20%7C%20Diarization%20%7C%20VAD-6F5C7D" alt="Speech intelligence" /></a>
-</p>
-
 <p align="center"><sub>真实会议室 · 企业内网 · 完整治理闭环 · 纯软件报价 15w+</sub></p>
-
-<p align="center">
-  <img src="docs/assets/figures/product-architecture.png" alt="AI Meeting Room System 产品架构：从会议室实时采集到企业治理成果" width="100%" />
-</p>
 
 ## 🎯 项目概览
 
@@ -103,10 +88,6 @@
 
 ## 📊 定性成果
 
-<p align="center">
-  <img src="docs/assets/figures/qualitative-results.png" alt="会议思维导图与两类企业文稿的定性成果" width="100%" />
-</p>
-
 ## 🏆 项目成果与企业价值
 
 ### 📦 交付成果
@@ -155,7 +136,7 @@
 docker run --rm -v /srv/meeting-models:/models:ro your-ai-service-image
 ```
 
-例如，宿主机上的 `/srv/meeting-models/asr/paraformer-streaming` 会对应到容器内的 `/models/asr/paraformer-streaming`。源码中的 `Path("/models/...")` 和环境变量只负责读取这个运行时位置。
+例如，宿主机上的 `/srv/meeting-models/asr/paraformer-streaming` 会对应到容器内的 `/models/asr/paraformer-streaming`。这些路径仅用于部署时的模型挂载。
 
 ```bash
 # ModelScope 示例：下载到本地缓存，再映射到 /models
@@ -175,100 +156,9 @@ ollama pull qwen3:14b
 
 </details>
 
-## 🚀 本地运行
-
-仓库提供源码、示例配置和测试，不附带企业运行环境。建议按“AI 服务 → Go API → 前端”的顺序启动。
-
-<details>
-<summary><strong>展开本地启动步骤</strong></summary>
-
-### 🧠 AI 服务依赖
-
-```bash
-cd ai-service
-python -m venv .venv
-source .venv/bin/activate  # Windows PowerShell: .venv\Scripts\Activate.ps1
-pip install -r requirements-speech.txt
-pip install -r requirements-qwen-asr.txt
-pip install -r requirements-pyannote.txt
-pip install -r requirements-audio.txt
-```
-
-将模型按上表挂载后，可使用 FastAPI 应用入口启动：
-
-```bash
-cd ai-service/service
-uvicorn ai_service.app:app --host 0.0.0.0 --port 8000
-```
-
-### ⚙️ Go API
-
-```bash
-cd backend
-Copy-Item config.json.example config.json
-# 删除 JSON 行尾注释，并把 CHANGE_ME_* 替换为本机开发值
-go run ./cmd/api -config config.json
-```
-
-### 🖥️ 前端工作台
-
-需要 Node.js `>=22.13.0`。前端环境变量示例见 [`frontend/.env.example`](frontend/.env.example)。
-
-```bash
-cd frontend
-npm install
-npm run dev
-```
-
-默认开发端口为 `5173`；Go API 和 AI 服务分别使用示例配置中的 `8080` 与 `8000`。
-
-</details>
-
-## 🧪 验证与测试
-
-<details>
-<summary><strong>展开测试命令</strong></summary>
-
-```bash
-# 前端构建与测试
-cd frontend
-npm test
-
-# Go 单元测试
-cd ../backend
-go test ./...
-
-# AI 服务测试
-cd ../ai-service/service
-python -m unittest discover -s tests -p 'test_*.py'
-```
-
-模型权重未安装时，AI 服务的模型加载和端到端推理测试不会自动通过；可以先运行不依赖权重的单元测试。
-
-</details>
-
-## 🗂️ 代码结构
-
-<details>
-<summary><strong>展开仓库目录</strong></summary>
-
-```text
-.
-├── ai-service/                 # FastAPI、本地模型 Provider 与 AI 工作流
-│   ├── service/ai_service/     # 音频、ASR、说话人、语义与交付物逻辑
-│   └── service/tests/          # AI 服务单元测试
-├── backend/                    # Go API、鉴权、业务服务、审计与迁移
-│   ├── cmd/api/                # API 组合根
-│   └── internal/               # 配置、存储、HTTP、P1 会议治理能力
-├── frontend/                   # Web 工作台与会议采集交互
-└── docs/assets/                # README 使用的声学波形素材
-```
-
-</details>
-
 ## ℹ️ 说明
 
-- 本仓库的代码与文档用于作品集展示和技术交流，不能直接替代生产部署方案。
+- 本项目说明用于作品集展示和技术交流，不能直接替代生产部署方案。
 - 运行前请检查模型许可、数据合规要求、GPU 驱动、数据库、对象存储和内网访问策略。
 - 生产环境应通过环境变量或受控配置注入密钥，禁止把真实凭据写入代码、日志、迁移文件或提交历史。
 
