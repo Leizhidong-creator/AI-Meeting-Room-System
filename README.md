@@ -12,7 +12,7 @@
 
 <p align="center"><em>面向企业内网会议的端到端 AI 会议治理系统</em></p>
 
-<p align="center"><sub>真实会议室 · 企业内网 · 完整治理闭环 · 纯软件报价 15w+</sub></p>
+<p align="center"><sub>真实会议室 · 企业内网 · 完整治理闭环 · 纯软件交付金额 15w+</sub></p>
 
 <p align="center">
   <img src="assets/product-architecture.png" alt="AI Meeting Room System 产品架构：从会议室实时采集到企业治理成果" width="100%" />
